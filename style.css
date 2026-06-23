@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+}
+
+.cabecalho__titulo {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3rem;
+}
+
+.cabecalho__nav--list {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecalho__nav--list-item a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.principal {
+    padding-top: 4rem;
+}
