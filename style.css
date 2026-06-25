@@ -13,11 +13,15 @@
     height: 4rem;
     width: 100%;
     position: fixed;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.865), rgba(212, 192, 147, 0.865));
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0rem 0.3rem 0.5rem rgba(121, 110, 84, 0.865);
 }
 
-.cabecalho__titulo {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 3rem;
+.cabecalho__logo {
+    transform: scale(2);
+    transform: translateX(2);
 }
 
 .cabecalho__nav--list {
@@ -25,13 +29,27 @@
     height: 4rem;
     align-items: center;
     list-style: none;
+    gap: 2rem;
+    margin-right: 1.5rem;
 }
 
 .cabecalho__nav--list-item a {
     text-decoration: none;
+    color: rgb(70, 64, 50);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+.cabecalho__nav--list-item a:hover {
     color: aliceblue;
+    background-color: rgb(25, 41, 90);
 }
 
 .principal {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
+}
+
+.principal__colab {
+    padding-top: 2.5rem;
 }
