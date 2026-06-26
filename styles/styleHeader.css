@@ -13,7 +13,7 @@
     height: 4rem;
     width: 100%;
     position: fixed;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.865), rgba(212, 192, 147, 0.865));
+    background-image: linear-gradient(to right, rgba(212, 192, 147, 0.977), rgba(255, 255, 255, 0.941));
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: 0rem 0.3rem 0.5rem rgba(121, 110, 84, 0.865);
@@ -21,7 +21,8 @@
 
 .cabecalho__logo {
     transform: scale(2);
-    transform: translateX(2);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
 }
 
 .cabecalho__nav--list {
@@ -42,14 +43,11 @@
 }
 
 .cabecalho__nav--list-item a:hover {
-    color: aliceblue;
-    background-color: rgb(25, 41, 90);
+    color: rgb(255, 255, 255);
+    background-color: rgba(212, 192, 147, 0.865);
 }
 
 .principal {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
 }
 
-.principal__colab {
-    padding-top: 2.5rem;
-}
