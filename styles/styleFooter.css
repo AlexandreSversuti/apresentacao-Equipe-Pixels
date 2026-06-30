@@ -1,0 +1,23 @@
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.rodape__div {
+    margin-left: 1rem;
+}
+
+.rodape__logoLindaura {
+    width: 3rem;
+    height: 3rem;
+}
+
+.rodape__nomeLindaura {
+    font-size: 1.5rem;
+}
+
+.rodape__agradecimento {
+    color: #a52a2a;
+}
