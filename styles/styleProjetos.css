@@ -1,0 +1,38 @@
+.principal__projetos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #a5e63cc3;
+}
+
+.principal__projetos--titulo {
+    align-self: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.principal__projetos--MD {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal__projetos--MD-nome {
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #425721, #4257219e);
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #ffffff;
+    padding: 0.2rem;
+    width: 19rem;
+    text-align: center;
+    align-self: center;
+}
+
+.principal__projetos--MD-img {
+    width: 50rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
