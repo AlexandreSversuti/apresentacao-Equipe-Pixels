@@ -1,0 +1,22 @@
+.principal__inicio {
+    display: flex;
+    justify-content: center;
+    background-color: #9de4e6b0;
+    
+}
+
+@keyframes flutuar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1.2rem);
+    }
+}
+
+.principal__inicio--logo {
+    height: 40rem;
+    width: auto;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin-top: 3rem;
+}

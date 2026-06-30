@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
 
+:root {
+    --cor-hoverHeader: #5CD6DB; 
+    --cor-background: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,47 +12,40 @@
     font-family: "Comfortaa", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
     height: 4rem;
     width: 100%;
     position: fixed;
-    background-image: linear-gradient(to right, rgba(212, 192, 147, 0.977), rgba(255, 255, 255, 0.941));
+    z-index: 1;
+    background-color: #5CD6DB;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow: 0rem 0.3rem 0.5rem rgba(121, 110, 84, 0.865);
-}
-
-.cabecalho__logo {
-    transform: scale(2);
-    margin-left: 2rem;
-    margin-top: 0.5rem;
+    box-shadow: 0rem 0.15rem 0.5rem rgba(118, 170, 165, 0.865);
+    transition: 0.2s;
 }
 
 .cabecalho__nav--list {
     display: flex;
+    justify-content: center;
     height: 4rem;
     align-items: center;
     list-style: none;
     gap: 2rem;
-    margin-right: 1.5rem;
 }
 
 .cabecalho__nav--list-item a {
     text-decoration: none;
-    color: rgb(70, 64, 50);
+    color: rgb(255, 255, 255);
     padding: 0.4rem;
     border-radius: 0.4rem;
     transition: 0.3s;
 }
 
 .cabecalho__nav--list-item a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgba(212, 192, 147, 0.865);
+    color: var(--cor-hoverHeader);
+    background-color: var(--cor-background);
 }
-
-.principal {
-    padding-top: 2rem;
-}
-
