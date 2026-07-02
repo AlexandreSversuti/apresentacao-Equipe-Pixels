@@ -1,20 +1,20 @@
 .principal__projetos {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: #a5e63cc3;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    background-color: #82b62fc3;
 }
 
 .principal__projetos--titulo {
     align-self: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .principal__projetos--MD {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .principal__projetos--MD-nome {
@@ -26,13 +26,38 @@
     padding: 0.2rem;
     width: 19rem;
     text-align: center;
-    align-self: center;
+    align-self: flex-start;
+    margin-left: 2rem;
 }
 
 .principal__projetos--MD-img {
-    width: 50rem;
-    margin-top: 3rem;
-    margin-left: 1rem;
+    height: 30rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
     border-radius: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.principal__projetos--MD-assets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    background-color: #b2e364c3;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-right: 5rem;
+    height: 30rem;
+}
+
+.MD-assets-armaPasta {
+    width: 15rem;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.MD-assets-Luis {
+    width: 21rem;
+    height: auto;
 }
