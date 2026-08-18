@@ -1,7 +1,9 @@
-.principal__inicio {
+.inicio {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #9de4e6b0;
+    min-height: 100vh;
     
 }
 
@@ -14,9 +16,37 @@
     }
 }
 
-.principal__inicio--logo {
+.logo-equipe {
     height: 40rem;
     width: auto;
     animation: flutuar 2s ease-in-out infinite alternate;
     margin-top: 3rem;
+}
+
+@media (min-width: 0px) {
+    .logo-equipe {
+        height: 20rem;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 500px) {
+    .logo-equipe {
+        height: 25rem;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 750px) {
+    .logo-equipe {
+        height: 30rem;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1100px) {
+    .logo-equipe {
+        height: 40rem;
+        transition: 0.3s;
+    }
 }

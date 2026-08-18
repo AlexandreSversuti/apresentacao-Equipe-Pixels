@@ -28,7 +28,7 @@ html {
     transition: 0.2s;
 }
 
-.cabecalho__nav--list {
+.menu_nav-list {
     display: flex;
     justify-content: center;
     height: 4rem;
@@ -37,7 +37,7 @@ html {
     gap: 2rem;
 }
 
-.cabecalho__nav--list-item a {
+.list-item a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 0.4rem;
@@ -45,7 +45,7 @@ html {
     transition: 0.3s;
 }
 
-.cabecalho__nav--list-item a:hover {
+.list-item a:hover {
     color: var(--cor-hoverHeader);
     background-color: var(--cor-background);
 }
