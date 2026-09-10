@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function() {
-    const header = document.querySelector(".cabecalho");
-    const sessaoColab = document.querySelector(".principal__colab");
-    const sessaoProjetos = document.querySelector(".principal__projetos");
+    const header = document.querySelector("header");
+    const sessaoColab = document.querySelector(".colaboradores");
+    const sessaoProjetos = document.querySelector(".projetos");
 
     const posicaoSessaoColab = sessaoColab.getBoundingClientRect();
     const posicaoSessaoProjetos = sessaoProjetos.getBoundingClientRect();

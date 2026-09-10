@@ -1,4 +1,4 @@
-.principal__colab {
+.colaboradores {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
@@ -6,13 +6,13 @@
     background-image: linear-gradient(to right, #edaa53, #edaa5398);
 }
 
-.principal__colab--titulo {
+.colab-titulo {
     font-size: 3rem;
     align-self: center;
     margin-bottom: 3rem;
 }
 
-.principal__colab--techLead, .principal__colab--backEnd, .principal__colab--infra {
+.colab-left {
     display: flex;
     align-items: center;
     width: 60%;
@@ -24,19 +24,19 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 } 
 
-.principal__colab--techLead:hover, .principal__colab--backEnd:hover, .principal__colab--infra:hover {
+.colab-left:hover {
     margin-left: 3rem;
     transform: scale(1.05);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.principal__colab--techLead-p, .principal__colab--backEnd-p, .principal__colab--infra-p {
+.colab-p {
     margin-left: 1rem;
     font-size: 1.1rem;
     line-height: 1.5;
 }
 
-.principal__colab--frontEnd, .principal__colab--dataBase, .principal__colab-documentacao {
+.colab-right {
     display: flex;
     align-items: center;
     width: 60%;
@@ -50,25 +50,25 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.principal__colab--frontEnd:hover, .principal__colab--dataBase:hover, .principal__colab-documentacao:hover {
+.colab-right:hover {
     margin-right: 3rem;
     transform: scale(1.05);
 }
 
-.principal__colab--frontEnd-p, .principal__colab--dataBase-p, .principal__colab-documentacao-p {
+.colab-p {
     margin-right: 1rem;
     font-size: 1.1rem;
     line-height: 1.5;
 }
 
-.principal__colab--div {
+.colab-div {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-right: 0.5rem;
 }
 
-.principal__colab--foto {
+.colab-foto {
     align-self: center;
 }
 
