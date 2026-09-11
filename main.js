@@ -18,7 +18,7 @@ window.addEventListener("scroll", function() {
         header.style.setProperty('--cor-background', '#864b1d');
     } else {
         header.style.backgroundColor = "#5CD6DB";
-        header.style.boxShadow = "0rem 0.15rem 0.5rem rgba(118, 170, 165, 0.865)";
+        header.style.boxShadow = "0rem 0.15rem 0.8rem rgba(58, 112, 107, 0.48)";
         header.style.setProperty('--cor-hoverHeader', '#5CD6DB');
         header.style.setProperty('--cor-background', '#ffffff');
     }
