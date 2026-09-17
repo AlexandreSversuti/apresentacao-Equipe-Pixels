@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
 
+:root {
+    --cor-hoverHeader: #5CD6DB;
+    --cor-background: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,8 +47,8 @@ li a{
 }
 
 li a:hover {
-    color: #5CD6DB;
-    background-color: #FFFFFF;
+    color: var(--cor-hoverHeader);
+    background-color: var(--cor-background);
 }
 
 /* Responsividade */
