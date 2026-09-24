@@ -1,0 +1,38 @@
+/* Mudança de cores no header*/
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    const sessaoColab = document.querySelector(".colaboradores");
+    const sessaoProjetos = document.querySelector(".projetos");
+
+    const posicaoSessaoColab = sessaoColab.getBoundingClientRect();
+    const posicaoSessaoProjetos = sessaoProjetos.getBoundingClientRect();
+
+    if (posicaoSessaoProjetos.top <= 50) {
+        header.style.backgroundColor = "#2e6e22";
+        header.style.boxShadow = "0rem 0.15rem 0.5rem #1d4616ab";
+        header.style.setProperty('--cor-hoverHeader', '#2e6e22'); 
+        header.style.setProperty('--cor-background', '#ffffff');
+    } else if (posicaoSessaoColab.top <= 50) {
+        header.style.backgroundColor = "#633417";
+        header.style.boxShadow = "0rem 0.15rem 0.5rem #4b2811";
+        header.style.setProperty('--cor-hoverHeader', '#FFFFFF');
+        header.style.setProperty('--cor-background', '#864b1d');
+    } else {
+        header.style.backgroundColor = "#5CD6DB";
+        header.style.boxShadow = "0rem 0.15rem 0.8rem rgba(58, 112, 107, 0.48)";
+        header.style.setProperty('--cor-hoverHeader', '#5CD6DB');
+        header.style.setProperty('--cor-background', '#ffffff');
+    }
+});
+
+/* Valores do formulario de feedback */
+const formFeedback = document.querySelector(".Formfeedback");
+
+formFeedback.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nome = document.querySelector("#nome").value;
+    const email = document.querySelector('#email').value;
+    const feedback = document.querySelector("#feedback").value;
+
+    console.log("funcionou (:");
+});

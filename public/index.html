@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleHeader.css">
+    <link rel="stylesheet" href="styles/styleInicio.css">
+    <link rel="stylesheet" href="styles/styleColab.css">
+    <link rel="stylesheet" href="styles/styleProjetos.css">
+    <link rel="stylesheet" href="styles/styleFooter.css">
+    <link rel="shortcut icon" href="chrome://favicon/http://localhost:5500" type="image/x-icon">
+    <script src="main.js" defer></script>
+    <title>Pixels | Lindaura</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="list-functions">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#colab">Colaboladores</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formFeedback">Feedback para nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="inicio">
+            <img class="logo-equipe" src="img/logoPixels.png" alt="logo-Equipe-Pixels">
+        </section>
+        <section class="colaboradores" id="colab">
+            <h1 class="colab-titulo">Colaboradores</h1>
+            <div class="colab-card">
+                <div class="colab-div">
+                    <h2>Tech Lead</h2>
+                    <img class="colab-foto" src="img/Alexandre.png" alt="PersonagemPixelAlexandre">
+                </div>
+                <img class="fotoReal" src="img/fotoAlexandre.jpg" alt="foto-Alexandre">
+                <p class="colab-p"><strong>Alexandre</strong> é o nosso Tech Lead. Esta função é
+                    essencial pois trabalha com a parte organizacional, técnica e ágil para que as ideias e projetos
+                    sejam integrados. Outra característica é que este cargo ajuda em todas as outras funções quando
+                    necessário.</p>
+            </div>
+            <div class="colab-card a"> 
+                <div class="colab-div">
+                    <h2>Front-end</h2>
+                    <img class="colab-foto" id="foto-front-End" src="img/Gustavo.png"
+                        alt="PersonagemPixelGustavo">
+                </div>
+                <img class="fotoReal" src="img/fotoGustavo.jpeg" alt="foto-Gustavo">
+                <p class="colab-p"><strong>Gustavo</strong> é o nosso Front-end. Esta função é
+                    essencial quando se diz em interface para o usuário, ele pode ser considerado um artista pois
+                    transforma uma ideia em código.</p>
+            </div>
+            <div class="colab-card">
+                <div class="colab-div">
+                    <h2>Back-end</h2>
+                    <img class="colab-foto" src="img/Vinícius.png" alt="PersonagemPixelVinicius">
+                </div>
+                <img class="fotoReal" src="img/fotoVinicius.jpeg" alt="foto-Vinicius">
+                <p class="colab-p"><strong>Vinícius</strong> é o nosso Back-end. Esta função é
+                    essencial e exige muito do raciocínio lógico. É ele quem faz as comunicações entre o Database e o
+                    Front-End. Sem ele acessar informações não é possível.</p>
+            </div>
+            <div class="colab-card a">
+                <div class="colab-div">
+                    <h2>Database</h2>
+                    <img class="colab-foto" src="img/Lucas.png" alt="PersonagemPixelLucas">
+                </div>
+                <img class="fotoReal" id="luquinhas" src="img/fotoLucas.jpeg" alt="foto-Lucas"> 
+                <p class="colab-p"><strong>Lucas</strong> é o nosso Database. Esta função utiliza
+                    muita análise e segurança. Pois é ele quem cria o banco de dados e adiciona todas as informações que
+                    serão utilizadas.</p>
+            </div>
+            <div class="colab-card">
+                <div class="colab-div">
+                    <h2>Infraestrutura</h2>
+                    <img class="colab-foto" src="img/Joao.png" alt="PersonagemPixelJoao">
+                </div>
+                <img class="fotoReal" src="img/fotoJoao.jpg" alt="foto-Joao">
+                <p class="colab-p"><strong>João</strong> cuida da parte da infraestrutura. Não menos
+                    importante mas essencial para que as tecnologias físicas como notebook cheguem até os
+                    desenvolvedores. Mas caso precise ele pode ajudar em qualquer área.</p>
+            </div>
+            <div class="colab-card a">
+                <div class="colab-div">
+                    <h2>Documentação</h2>
+                    <img class="colab-foto" src="img/Maria.png" alt="PersonagemPixelMaria">
+                </div>
+                <img class="fotoReal" src="img/fotoMaria.jpg" alt="foto-Maria">    
+                <p class="colab-p"><strong>Maria</strong> cuida da documentação, essa função é
+                    uma das mais importantes, pois documenta cada ação da equipe, além de esta função exigir muita
+                    organização, e também pode cooperar em outras áreas, ideias e design dos projetos.</p>
+                
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <h1 class="projetos-titulo">Projetos</h1>
+            <h2 class="monkey-nome">Monkey Defenser</h2>
+            <div class="monkey-about">
+                <img class="monkey-img" src="img/monkeyDefenser.jpg" alt="imagem-monkeyDefenser">
+                <div class="monkey-assets">
+                    <img class="assets-armaPasta" src="img/Arma2.png" alt="arma-formato-pastaDoWindows">
+                    <img class="assets-luis" src="img/Luis.png" alt="professor-luis">
+                </div>
+            </div>
+        </section>
+        <form class="formFeedback" id="formFeedback">
+            <h1>Dê seu feedback aqui</h1>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Exemplo: Alexandre...">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Exemplo: user@gmail.com">
+                <label for="feedback">Feedback</label>
+                <input type="text" id="feedback" placeholder="Melhor equipe que existe...">
+                <button type="submit">Enviar feedback</button>
+            </div>
+        </form> 
+    </main>
+    <footer class="rodape">
+        <img class="rodape-logo" src="img/logo-lindaura.png" alt="Logo lindaura">
+        <div class="rodape-div">
+            <h1 class="nomeLindaura">Colégio Estadual Professora Lindaura Ribeiro Lucas</h1>
+            <p class="agradecimento">Agradecemos sua visita!</p>
+        </div>
+    </footer>
+</body>
+
+</html>

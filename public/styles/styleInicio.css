@@ -1,0 +1,44 @@
+@keyframes flutuar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1.2rem);
+    }
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9de4e6b0;
+    min-height: 100vh;
+    
+}
+
+.logo-equipe {
+    height: 40rem;
+    width: auto;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin-top: 3rem;
+    transition: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 1100px) {
+    .logo-equipe {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo-equipe {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-equipe {
+        height: 20rem;
+    }
+}
