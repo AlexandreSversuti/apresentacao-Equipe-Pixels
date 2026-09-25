@@ -1,21 +1,13 @@
 //Criando back-end para parte de feedback top kkk
 const express = require('express');
-const cors = require('cors');
-
+const db = require('./database/database');
 const app = express();
-const PORT = 3000;
-
-app.use(cors());
 app.use(express.json());
 
-app.post('/api/feedback', (req, res) => {
-    console.log(req.body);
+const PORT = 3000;
 
-    res.json({
-        mensagem: 'Feedback recebido!'
-    })
-});
+console.log('banco conectado!');
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT} 🚀`);
+    console.log('Servidor rodando na porta 3000');
 });
