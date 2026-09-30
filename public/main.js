@@ -28,11 +28,16 @@ window.addEventListener("scroll", function() {
 /* Valores do formulario de feedback */
 const formFeedback = document.querySelector(".Formfeedback");
 
-formFeedback.addEventListener("submit", (event) => {
+formFeedback.addEventListener("submit", async (event) => {
     event.preventDefault();
     const nome = document.querySelector("#nome").value;
     const email = document.querySelector('#email').value;
-    const feedback = document.querySelector("#feedback").value;
+    const mensagem = document.querySelector("#feedback").value;
 
-    console.log("funcionou (:");
+    const feedback = {
+        nome: nome,
+        email: email,
+        mensagem: mensagem
+    };
+    console.log(feedback);
 });
