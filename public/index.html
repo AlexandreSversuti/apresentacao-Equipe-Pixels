@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styleInicio.css">
     <link rel="stylesheet" href="styles/styleColab.css">
     <link rel="stylesheet" href="styles/styleProjetos.css">
+    <link rel="stylesheet" href="styles/styleForm.css">
     <link rel="stylesheet" href="styles/styleFooter.css">
     <link rel="shortcut icon" href="chrome://favicon/http://localhost:5500" type="image/x-icon">
     <script src="main.js" defer></script>
@@ -102,26 +103,29 @@
                     <img class="assets-armaPasta" src="img/Arma2.png" alt="arma-formato-pastaDoWindows">
                     <img class="assets-luis" src="img/Luis.png" alt="professor-luis">
                 </div>
-                <div class="monkey-assets-b">
-                    <p>
-                        O <strong>Monkey Defenser</strong> é um game estilo rpg, no modo 2d, que consite em um Macaco chamado <strong>Pixel</strong> que precisa defender um notebook de vírus que estão tentando destruir. O game é dividido em níveis e hordas, a cada nível os vírus vão ficando mais fortes e vão aparecendo mais ainda, por isso existem as cartas de poder que o jogador pode escolher depois de uma rodada.
-                    </p>
-                    <img src="img/boss.png" alt="imagem-boss-aranha">
-                </div>
+            </div>
+            <div class="monkey-assets-b">
+                <p>
+                    O <strong>Monkey Defenser</strong> é um game estilo rpg, no modo 2d, que consite em um Macaco chamado <strong>Pixel</strong> que precisa defender um notebook de vírus que estão tentando destruir. O game é dividido em níveis e hordas, a cada nível os vírus vão ficando mais fortes e vão aparecendo mais ainda, por isso existem as cartas de poder que o jogador pode escolher depois de uma rodada.
+                </p>
+                <img src="img/boss.png" alt="imagem-boss-aranha">
             </div>
         </section>
         <form class="formFeedback" id="formFeedback">
-            <h1>Dê seu feedback aqui</h1>
-            <div>
+            <h1 class="form-h1">Dê seu feedback aqui</h1>
+            <div class="divForm">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Exemplo: Alexandre...">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Exemplo: user@gmail.com">
+                <input class="input" type="text" id="nome" placeholder="Exemplo: Alexandre...">
+                <label  for="email">Email</label>
+                <input class="input" type="email" id="email" placeholder="Exemplo: user@gmail.com">
                 <label for="feedback">Feedback</label>
-                <input type="text" id="feedback" placeholder="Melhor equipe que existe...">
-                <button type="submit">Enviar feedback</button>
+                <input class="input" type="text" id="feedback" placeholder="Melhor equipe que existe...">
+                <button type="submit" type="button">Enviar feedback</button>
             </div>
         </form> 
+        <div class="sessaoEscondida" hidden>
+            <span>Obrigado Pelo feedback!</span>
+        </div>
     </main>
     <footer class="rodape">
         <img class="rodape-logo" src="img/logo-lindaura.png" alt="Logo lindaura">

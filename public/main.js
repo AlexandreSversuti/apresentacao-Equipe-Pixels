@@ -26,10 +26,11 @@ window.addEventListener("scroll", function() {
 });
 
 /* Valores do formulario de feedback */
-const formFeedback = document.querySelector(".Formfeedback");
+const formFeedback = document.querySelector(".formFeedback");
 
-formFeedback.addEventListener("submit", async (event) => {
-    event.preventDefault();
+formFeedback.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    console.log('submit foi interceptado');
     const nome = document.querySelector("#nome").value;
     const email = document.querySelector('#email').value;
     const mensagem = document.querySelector("#feedback").value;
@@ -39,5 +40,18 @@ formFeedback.addEventListener("submit", async (event) => {
         email: email,
         mensagem: mensagem
     };
-    console.log(feedback);
-});
+
+    const resposta = await fetch('http://localhost:3000/feedback', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(feedback)
+    });
+    console.log("resposta recebida");
+    const resultado = await resposta.json();
+    console.log("resultado:", resultado);
+    console.log("resultado:",resultado);
+    formFeedback.setAttribute("hidden", true);
+    document.querySelector(".sessaoEscondida").removeAttribute("hidden");
+    });

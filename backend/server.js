@@ -1,8 +1,10 @@
 //Criando back-end para parte de feedback top kkk
 const express = require('express');
+const cors = require('cors');
 const db = require('./database/database');
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const PORT = 3000;
 console.log('banco conectado!');

@@ -29,6 +29,7 @@
     display: grid;
     grid-template-columns: 60% 30%;
     justify-content: space-between;
+    gap: 5rem;
 }
 
 .monkey-img {
@@ -61,6 +62,29 @@
 .assets-luis {
     width: 21rem;
     height: auto;
+}
+
+.monkey-assets-b {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.monkey-assets-b p {
+    align-self: center;
+    font-size: 1.2rem;
+    background-color: #425721ab;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4rem 2rem 3rem 4rem;
+    margin-left: 2rem;
+    width: 55%;
+}
+
+.monkey-assets-b img {
+    height: 30rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
 }
 
 /* Responsividade */

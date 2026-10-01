@@ -1,5 +1,16 @@
- .divForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+.form-h1 {
+   text-align: center;
+   margin: 2rem 0 3rem 0;
+}
+
+.divForm {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.input {
+   width: 30%;
+   height: 3rem;
+} 
