@@ -1,7 +1,7 @@
 .form-h1 {
    text-align: center;
    margin: 2rem 0 3rem 0;
-}
+}  
 
 .divForm {
    display: flex;
@@ -13,4 +13,7 @@
 .input {
    width: 30%;
    height: 3rem;
+   border-radius: 2rem;
+   border: none;
+   outline: none;
 } 
